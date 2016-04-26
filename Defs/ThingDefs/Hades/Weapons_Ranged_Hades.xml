@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Hades========================================-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Soulcrusher</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Soulcrusher</thingClass>
+    <graphicData>
+      <texPath>Projectile/Soulcrusher</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Hades</defName>
+    <label>Soulcrusher heavy assault rifle</label>
+    <description>A unique, heavy hitting assault rifle.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Hades</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Soulcrusher_AssautRifle_Hades</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.74</AccuracyTouch>
+      <AccuracyShort>0.91</AccuracyShort>
+      <AccuracyMedium>0.81</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Soulcrusher</projectileDef>
+        <warmupTicks>90</warmupTicks>
+        <range>31</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Soulcrusher_Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>30</roundPerMag>
+        <reloadTick>120</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

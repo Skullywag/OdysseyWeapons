@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Hephaestus========================================-->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Anvil</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Anvil</thingClass>
+    <graphicData>
+      <texPath>Projectile/Anvil</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>50</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Hephaestus</defName>
+    <label>Anvil LMG</label>
+    <description>A unique LMG with a very high ammo capacity.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Hephaestus</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Anvil_LMG_Hephaestus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.54</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Anvil</projectileDef>
+        <warmupTicks>120</warmupTicks>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>12</burstShotCount>
+        <soundCast>Anvil_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>300</roundPerMag>
+        <reloadTick>400</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

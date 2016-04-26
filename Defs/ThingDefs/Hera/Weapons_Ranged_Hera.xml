@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Hera========================================-->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Widowmaker</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Widowmaker</thingClass>
+    <graphicData>
+      <texPath>Projectile/Widowmaker</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Hera</defName>
+    <label>Widowmaker Sniper rifle</label>
+    <description>A unique, semi automatic sniper rifle.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Hera</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Widowmaker_Sniper_Hera</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.54</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Widowmaker</projectileDef>
+        <warmupTicks>120</warmupTicks>
+        <range>45</range>
+        <soundCast>Widowmaker_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>12</roundPerMag>
+        <reloadTick>360</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

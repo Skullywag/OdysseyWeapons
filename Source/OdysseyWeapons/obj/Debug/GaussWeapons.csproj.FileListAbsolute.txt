@@ -1,0 +1,6 @@
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\Odyssey\Source\Odyssey\bin\Debug\Odyssey.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\Odyssey\Source\Odyssey\bin\Debug\Odyssey.pdb
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\Odyssey\Source\Odyssey\bin\Debug\Community Core Library.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\Odyssey\Source\Odyssey\obj\Debug\GaussWeapons.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\Odyssey\Source\Odyssey\obj\Debug\Odyssey.dll
+C:\Users\mjsku\Desktop\New folder\RimWorldAlpha12dWin\RimWorld914Win\Mods\Odyssey\Source\Odyssey\obj\Debug\Odyssey.pdb

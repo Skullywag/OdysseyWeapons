@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>Heartbreaker_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Heartbreaker_Shot</clipPath>         
+        </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>ApolloBow_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ApolloBow_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>20.58823</min>
+          <max>22.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Warbringer_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Warbringer_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Hyperion_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Hyperion_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Anvil_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Anvil_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>ArtemisBow_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ArtemisBow_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Famine_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Famine_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Hangover_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Hangover_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Heater_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Heater_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Minerva_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Minerva_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Olympus_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Olympus_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Soulcrusher_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Soulcrusher_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Tsunami_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Tsunami_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Widowmaker_Shot</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Widowmaker_Shot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>40.58823</min>
+          <max>42.58823</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</DefPackage-SoundDef>

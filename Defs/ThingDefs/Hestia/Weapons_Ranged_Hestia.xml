@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Hestia========================================-->
+
+  <ThingDef Class="OdysseyWeapons.ThingDef_LaserProjectile" ParentName="BaseBullet">
+    <defName>Bullet_Heater</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Heater</thingClass>
+    <graphicData>
+      <texPath>Projectile/Heater</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>LaserImpact</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>80</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>Stun</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+    <preFiringInitialIntensity>0</preFiringInitialIntensity>
+    <preFiringFinalIntensity>1</preFiringFinalIntensity>
+    <postFiringInitialIntensity>1</postFiringInitialIntensity>
+    <postFiringFinalIntensity>0</postFiringFinalIntensity>
+    <preFiringDuration>7</preFiringDuration>
+    <postFiringDuration>23</postFiringDuration>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Hestia</defName>
+    <label>Heater laser pistol</label>
+    <description>A unique, laser pistol, able to heat its target to incredible temperatures.</description>
+      <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Hestia</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Heater_LaserPistol_Hestia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.54</AccuracyMedium>
+      <AccuracyLong>0.36</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Heater</projectileDef>
+        <warmupTicks>54</warmupTicks>
+        <range>24</range>
+        <soundCast>Heater_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>9</roundPerMag>
+        <reloadTick>60</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

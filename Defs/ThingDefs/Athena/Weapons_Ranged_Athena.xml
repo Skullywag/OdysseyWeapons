@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Athena========================================-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Minerva</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Minerva</thingClass>
+    <graphicData>
+      <texPath>Projectile/Minerva</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <DamageAmountBase>12</DamageAmountBase>
+      <Speed>60</Speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Athena</defName>
+    <label>Minerva heavy Pistol</label>
+    <description>A unique, heavy hitting pistol sidearm.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Athena</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Minerva_HeavyPistol_Athena</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.54</AccuracyMedium>
+      <AccuracyLong>0.36</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Minerva</projectileDef>
+        <warmupTicks>54</warmupTicks>
+        <range>24</range>
+        <soundCast>Minerva_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>9</roundPerMag>
+        <reloadTick>90</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

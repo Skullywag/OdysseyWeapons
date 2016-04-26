@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Demeter========================================-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Famine</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Famine</thingClass>
+    <graphicData>
+      <texPath>Projectile/Famine</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Demeter</defName>
+    <label>Famine automatic shotgun</label>
+    <description>A unique, fully automatic shotgun.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Demeter</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Famine_Shotgun_Demeter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.84</AccuracyTouch>
+      <AccuracyShort>0.91</AccuracyShort>
+      <AccuracyMedium>0.81</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Famine</projectileDef>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <warmupTicks>90</warmupTicks>
+        <range>16</range>
+        <soundCast>Famine_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>40</roundPerMag>
+        <reloadTick>300</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

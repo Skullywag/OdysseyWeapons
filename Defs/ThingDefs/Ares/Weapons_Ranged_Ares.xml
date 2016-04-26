@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Gauss========================================-->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Warbringer</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Warbringer</thingClass>
+    <graphicData>
+      <texPath>Projectile/Warbringer/Warbringer_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Ares</defName>
+    <label>warbringer heavy assault rifle</label>
+    <description>A unique, large calibre, hard hitting assault rifle.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Ares</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Warbringer_HeavyAssaultRifle_Ares</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.74</AccuracyTouch>
+      <AccuracyShort>0.91</AccuracyShort>
+      <AccuracyMedium>0.81</AccuracyMedium>
+      <AccuracyLong>0.68</AccuracyLong>
+      <RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Warbringer</projectileDef>
+        <warmupTicks>30</warmupTicks>
+        <range>31</range>
+        <soundCast>Warbringer_Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>11</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>40</roundPerMag>
+        <reloadTick>360</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</ThingDefs>

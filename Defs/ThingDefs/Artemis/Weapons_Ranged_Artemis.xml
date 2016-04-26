@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Artemis========================================-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Arrow_Artemis</defName>
+    <label>Artemis arrow</label>
+    <thingClass>OdysseyWeapons.Projectile_ArtemisBow</thingClass>
+    <graphicData>
+      <texPath>Projectile/Artemis_Bow/ArtemisBow_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <DamageAmountBase>14</DamageAmountBase>
+      <Speed>44</Speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Artemis</defName>
+    <label>Artemis bow</label>
+    <description>A very powerful, unique, custom made bow, in the right hands its more powerful than most firearms.</description>
+    <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Artemis</li>
+    </weaponTags>
+    <graphicData>
+      <texPath>Weapons/Ranged/Artemis_Bow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>BowLarge</soundInteract>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.93</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>0.66</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Arrow_Artemis</projectileDef>
+        <warmupTicks>150</warmupTicks>
+        <range>29</range>
+        <soundCast>ArtemisBow_Shot</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+
+</ThingDefs>

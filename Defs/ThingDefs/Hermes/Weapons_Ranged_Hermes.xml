@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  
+  <!-- ======================Hermes========================================-->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Hyperion</defName>
+    <label>Bullet</label>
+    <thingClass>OdysseyWeapons.Projectile_Hyperion</thingClass>
+    <graphicData>
+      <texPath>Projectile/Hyperion</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_ExtraDamage">
+        <compClass>OdysseyWeapons.CompExtraDamage</compClass>
+        <damageDef>EMP</damageDef>
+        <damageAmount>15</damageAmount>
+        <chanceToProc>0.1</chanceToProc>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ============================================================== -->
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Ranged_Hermes</defName>
+    <label>Hyperion Sniper rifle</label>
+    <description>A unique, hypersonic sniper rifle.</description>
+      <weaponTags>
+      <li>AdvancedGun</li>
+      <li>Hermes</li>
+    </weaponTags>
+    <soundInteract>EnergyPickup</soundInteract>
+    <graphicData>
+      <texPath>Weapons/Ranged/Hyperion_Sniper_Hermes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.54</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>OdysseyWeapons.Verb_ShootJamReload</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_Hyperion</projectileDef>
+        <warmupTicks>240</warmupTicks>
+        <range>45</range>
+        <soundCast>Hyperion_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="OdysseyWeapons.CompProperties_Reloader">
+        <compClass>OdysseyWeapons.CompReloader</compClass>
+        <roundPerMag>5</roundPerMag>
+        <reloadTick>240</reloadTick>
+      </li>
+    </comps>
+  </ThingDef>
+
+</ThingDefs>

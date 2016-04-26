@@ -1,0 +1,6 @@
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\bin\Debug\OdysseyWeapons.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\bin\Debug\OdysseyWeapons.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\bin\Debug\Community Core Library.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.pdb
