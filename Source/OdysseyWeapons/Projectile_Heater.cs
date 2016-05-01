@@ -50,7 +50,7 @@ namespace OdysseyWeapons
         /// </summary>
         public void GetParametersFromXml()
         {
-            ThingDef_LaserProjectile additionalParameters = def as ThingDef_LaserProjectile;
+            ThingDef_LaserProjectileOdyssey additionalParameters = def as ThingDef_LaserProjectileOdyssey;
 
             preFiringDuration = additionalParameters.preFiringDuration;
             postFiringDuration = additionalParameters.postFiringDuration;

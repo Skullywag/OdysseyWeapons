@@ -9,7 +9,7 @@ using RimWorld;
 
 namespace OdysseyWeapons
 {
-    public class ThingDef_LaserProjectile : ThingDef
+    public class ThingDef_LaserProjectileOdyssey : ThingDef
     {
         public float preFiringInitialIntensity = 0f;
         public float preFiringFinalIntensity = 0f;

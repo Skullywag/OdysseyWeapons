@@ -4,3 +4,9 @@ C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\So
 C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.csprojResolveAssemblyReference.cache
 C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.dll
 C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.pdb
+\\MAIN-RIG\LocalShare\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.csprojResolveAssemblyReference.cache
+\\MAIN-RIG\LocalShare\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.dll
+\\MAIN-RIG\LocalShare\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\obj\Debug\OdysseyWeapons.pdb
+\\MAIN-RIG\LocalShare\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\bin\Debug\OdysseyWeapons.dll
+\\MAIN-RIG\LocalShare\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\bin\Debug\OdysseyWeapons.pdb
+\\MAIN-RIG\LocalShare\RimWorldAlpha13Win\RimWorld1135Win\Mods\OdysseyWeapons\Source\OdysseyWeapons\bin\Debug\Community Core Library.dll

@@ -3,7 +3,7 @@
   
   <!-- ======================Hestia========================================-->
 
-  <ThingDef Class="OdysseyWeapons.ThingDef_LaserProjectile" ParentName="BaseBullet">
+  <ThingDef Class="OdysseyWeapons.ThingDef_LaserProjectileOdyssey" ParentName="BaseBullet">
     <defName>Bullet_Heater</defName>
     <label>Bullet</label>
     <thingClass>OdysseyWeapons.Projectile_Heater</thingClass>
